@@ -52,19 +52,15 @@ void carregamento() {
 void quadradoJogo() {
 	setlocale(LC_ALL, "C");
 	int pX, pY;
-	// Lado esquerdo (Usuário)
 	for (pX=4, pY=4; pY<=27;pY++) {
 		gotoxy(pX,pY); printf ("%c", 219);
 	}
-	// Lado Lado direito (Usuário)
 	for (pX=117, pY=4; pY<=27; pY++) {
 		gotoxy(pX,pY); printf ("%c", 219);
 	}
-	//Cima
 	for (pX=4, pY=4;pX<=117;pX++) {
 		gotoxy(pX,pY); printf ("%c", 219);
 	}
-	//Baixo
 	for (pX=4, pY=27;pX<=117;pX++) {
 		gotoxy(pX,pY); printf ("%c", 219);
 	}
