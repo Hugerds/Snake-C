@@ -74,7 +74,7 @@ void jogoRodando() {
 	system("cls");
 	int setaBaixo = 0, setaCima = 0, setaEsquerda = 0, setaDireita = 0, captaTecla, posX[400]={5,116}, posY[400]={5,26}, y, opcao = 1;
 	int vPontos=100, vCobra=1, pontosCorridos=0, nivelJogador = 1, sorteiaX, sorteiaY, var, tamanhoJogador=1, reiniciar = 1;
-	char tecla=0; // Definir um valor aleatório para entrar no loop do jogo
+	char tecla=0;
 	quadradoJogo();
 	captaTecla = 3;
 	srand(time(NULL));
