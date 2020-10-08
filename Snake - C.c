@@ -173,11 +173,7 @@ void menuPrincipal() {
         gotoxy(20,8);  printf("SAIR");
         gotoxy(20,13); printf("Esse é o clássico jogo da cobrinha, apenas se movimente pelo mapa para ficar grande\n                   e tente não ser eliminado.\n                   Você pode se mover com as setinhas ou com o WASD. Boa sorte!");
         setlocale(LC_ALL, "C");
-        
-        
-
         system("pause>nul");
-
 		if(GetAsyncKeyState(VK_DOWN) && y != 8) {
             gotoxy(18,y); printf("  ");
             y++;
@@ -186,7 +182,6 @@ void menuPrincipal() {
             _beep(400,200);
             continue;
         }
-
 		if(GetAsyncKeyState(VK_UP) && y != 7){
             gotoxy(18,y); printf("  ");
             y--;
@@ -195,7 +190,6 @@ void menuPrincipal() {
             _beep(400,200);
             continue;
         }
-
 		if(GetAsyncKeyState(VK_RETURN)){
             if (opcao == 1) {
             	carregamento();
